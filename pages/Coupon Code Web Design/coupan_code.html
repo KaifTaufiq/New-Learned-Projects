@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coupon Code Web Design | Kaif Shaikh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="coupan-card">
+        <img src="logo.jpg" alt="" class="logo" />
+        <h3>
+          20% Flat off on all rides within the city using <br />HDFC Credit Card
+        </h3>
+
+        <div class="coupan-row">
+          <span id="cpnCode">CODETRY</span>
+          <span id="cpnBtn">COPY CODE</span>
+        </div>
+
+        <p>Valid Till: 20 Dec,2020</p>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+    </div>
+    <script>
+      var cpnbtn = document.getElementById("cpnBtn");
+      var cpnCode = document.getElementById("cpnCode");
+      
+      cpnBtn.onclick = function () {
+        navigator.clipboard.writeText(cpnCode.innerHTML);
+        cpnbtn.innerHTML = "COPIED";
+        setTimeout(function(){
+            cpnbtn.innerHTML = "COPY CODE";
+        },3000)
+      };
+    </script>
+  </body>
+</html>
