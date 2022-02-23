@@ -37,9 +37,13 @@ ul {
   margin-top: 20px;
   padding: 0px 20px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 /* --- Card --- */
 .card {
+
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -48,14 +52,21 @@ ul {
   width: 320px;
   border-radius: 10px;
   padding: 5px;
-  margin: 0px 10px;
+  margin: 10px 10px;
+}
+#button{
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 5px 0px;
+  text-decoration: none;
 }
 #one {
   background-color: #f0fff3;
 }
 #one a{
-  color: black;
+  color: white;
   text-decoration: none;
+  background-color: black;
 }
 .card img {
   border-radius: 10px;
@@ -66,5 +77,16 @@ ul {
 }
 #two a{
   text-decoration: none;
+  color: black;
+  background-color: white;
+}
+#four{
+  background-color:#322846;
   color: white;
+  text-decoration: none;
+}
+#four a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
